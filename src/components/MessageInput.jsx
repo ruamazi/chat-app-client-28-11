@@ -72,7 +72,7 @@ const MessageInput = () => {
      <input
       id="text-input"
       type="text"
-      className="w-full input input-bordered rounded-lg input-sm sm:input-md"
+      className="w-full input input-bordered rounded-lg input-md"
       placeholder="Type a message..."
       value={text}
       onChange={(e) => setText(e.target.value)}
@@ -87,7 +87,7 @@ const MessageInput = () => {
 
      <button
       type="button"
-      className={`hidden sm:flex btn btn-circle btn-sm absolute right-2 top-2
+      className={`sm:flex btn btn-circle btn-sm absolute right-2 top-2
                      ${imagePreview ? "text-emerald-500" : "text-zinc-400"}`}
       onClick={() => fileInputRef.current?.click()}
      >
